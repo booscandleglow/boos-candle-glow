@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boo's Candle Glow - Order</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; text-align: center; margin: 0; padding: 0; }
+        nav { background: #333; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Place Your Order</h1>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            Name: <input type="text" name="name"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Select Candle: 
+            <select name="candle">
+                <option value="Vanilla Bliss">Vanilla Bliss</option>
+                <option value="Lavender Dreams">Lavender Dreams</option>
+                <option value="Citrus Burst">Citrus Burst</option>
+            </select><br><br>
+            Quantity: <input type="number" name="quantity" min="1"><br><br>
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+</body>
+</html>
